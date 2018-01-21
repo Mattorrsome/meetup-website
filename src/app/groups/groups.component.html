@@ -1,0 +1,43 @@
+<ng-template #select_content>
+    <h2>You have yet to select a Category</h2>
+    <div>
+      please select an interest category     
+    <div class="selectionDiv" >
+          <a routerLink="/settings">HERE
+          </a>
+      </div>
+    </div>
+</ng-template>
+<div *ngIf="Global.selectedCategory; else select_content">
+    <h2>You have currently selected <div class="selectionDiv" >{{Global.selectedCategory.name}}</div> as your main category</h2>
+
+    <div *ngIf="Global.secondaryCategories.length > 0">
+      <div>your secondary categories are:</div>
+      <div *ngFor="let secondarySelectedCategory of secondarySelectedCategories" class="selectionDiv secondarySelectionDiv" >{{secondarySelectedCategory.name}}</div>
+    </div>
+
+    <div>
+        would you like to add secondary categories?  
+    </div>
+    <div class="selectionDiv" >
+      <a routerLink="/secondaryCategories">
+        CLICK HERE!
+      </a>
+    </div>
+
+    <div>
+      <button name="generateGroups"  (click)="getGroups()">Show Groups</button>
+    </div>
+
+    <div *ngIf="groups">
+        <div class="grid grid-pad">
+            <a *ngFor="let group of groups" class="col-1-4"
+                routerLink="/detail/{{group.id}}">
+              <div class="module">
+                <h4>{{group.name}}</h4>
+              </div>
+            </a>
+          </div>
+    </div>
+</div>
+

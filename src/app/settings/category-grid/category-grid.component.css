@@ -1,0 +1,46 @@
+.selectedMainCategory
+{
+    background-color: rgb(0, 39, 56);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding-top: 3%;
+    border-radius: 4px;    
+}
+.selectedMainCategory:hover
+{
+    background-color: rgb(0, 39, 56);
+    color: white;    
+}
+.selected
+{
+    background-color: #CFD8DC !important;
+    color: #292828;
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    border-radius: 4px;
+    margin-top: 15%;
+}
+
+.module {
+
+    text-align: center;
+    color: #7d7575;
+    height: 120px;
+    max-width: 200px;
+    min-width: 120px;
+    background-color: #c6dbec;
+    border-radius: 2px;
+    display: table-caption;
+}
+
+  .categoryGridHeader
+  {
+    display: inline-block
+  }
+
+  .categoryGridHeaderRight
+  {
+    float: right;
+  }

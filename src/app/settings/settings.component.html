@@ -1,0 +1,27 @@
+<div>
+<div *ngIf="Global.selectedCategory; else select_content">
+  <h2>You have currently selected: {{Global.selectedCategory.name}}</h2>
+</div>
+<ng-template #select_content>
+    <div>
+      <h2>Select a Category of Interest: </h2>
+    </div>
+</ng-template>
+
+  <ul class="category">
+    <li *ngFor="let category of Global.categoryArray"
+    [class.selected]="category === Global.selectedCategory"  (click)="onSelect(category)">
+      {{category.name}} 
+    </li>
+  </ul>
+
+</div>
+<div *ngIf="Global.selectedCategory">
+    <div>
+        You can find groups based on your interst category    
+      <div class="selectionDiv" >
+            <a routerLink="/groups">HERE
+            </a>
+        </div>
+      </div>
+</div>

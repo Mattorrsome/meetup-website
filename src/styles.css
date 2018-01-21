@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+
+label {
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+  input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+  button {
+    margin-top: 20px;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer; cursor: hand;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[text], button {
+    color: #888;
+    font-family: Cambria, Georgia;
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #607D8B;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .category {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    columns: 3;
+    column-width: 11em;
+    font-size: 1em;
+  }
+  .category li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 2em;
+    max-width: 25em;
+    border-radius: 4px;
+    text-align: center; 
+  }
+  .category li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .category li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .category .text {
+    position: relative;
+    top: -3px;
+  }
+
+  .grid {
+    margin: 0;
+  }
+  .col-1-4 {
+    width: 25%;
+    display: inline;
+  }
+  .module {
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    height: 120px;
+    max-width: 200px;
+    min-width: 120px;
+    background-color: #1e751d;
+    border-radius: 2px;
+    display: table-caption;
+  }
+  .module:hover {
+    background-color: #EEE;
+    cursor: pointer;
+    color: #607d8b;
+  }
+  .grid-pad {
+    padding: 10px 0;
+    padding-right: 20px;
+  }
+
+  .selectionDiv {
+    display: inline-block;
+    background-color: #c6dbec;
+    text-align: center;
+    padding: 2px;
+    border-radius: 4px;
+  }
+
+  .secondarySelectionDiv
+  {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+.selectionDiv a {
+
+    color: #888;
+    text-decoration: none;
+    position: relative;
+    display: block;
+  }
+  
+  .selectionDiv a:hover {
+    color:rgba(21, 22, 22, 0.575);
+    background-color:  #1881d8b4;
+  }
