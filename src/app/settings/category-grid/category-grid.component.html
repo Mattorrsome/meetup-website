@@ -7,14 +7,10 @@
 
 <div *ngIf="Global.categoryArray">
     <div class="grid grid-pad">
-        <div *ngFor="let category of Global.categoryArray" class="col-1-4">
-          <div class="module" (click)="onSelect(category)" >
-            <div [class.selectedMainCategory]="category === Global.selectedCategory" >
-              <div [class.selected]="isSecondarySelected(category)">
+        <div *ngFor="let category of Global.categoryArray" [class.selectedMainCategory]="category === Global.selectedCategory" class="col-1-4 module"  [class.selected]="isSecondarySelected(category)"  (click)="onSelect(category)" >            <div>
                   <h4>{{category.name}}</h4>
-              </div>
             </div>
-          </div>
+          
         </div>
     
 </div>
