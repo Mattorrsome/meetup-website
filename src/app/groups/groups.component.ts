@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MeetupService} from '../services/meetup.service';
 import {Global} from '../classes/global';
+import { Group } from '../classes/group';
 
 @Component({
   selector: 'app-groups',
@@ -13,7 +14,7 @@ export class GroupsComponent implements OnInit {
   groups = [];
   secondarySelectedCategories = [];
 
-  constructor(private MeetupService: MeetupService, private Global: Global) {}
+  constructor(private MeetupService: MeetupService, private Global: Global,  private Group:Group) {}
 
 
   ngOnInit() {
@@ -52,6 +53,11 @@ export class GroupsComponent implements OnInit {
       this.groups = response;
     });
 
+  }
+
+  setSelectedGroup(group)
+  {
+    this.Group.selectedGroup = group;
   }
 }
 

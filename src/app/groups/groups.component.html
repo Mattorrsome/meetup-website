@@ -11,7 +11,7 @@
 <div *ngIf="Global.selectedCategory; else select_content">
     <h2>You have currently selected <div class="selectionDiv" >{{Global.selectedCategory.name}}</div> as your main category</h2>
 
-    <div *ngIf="Global.secondaryCategories.length > 0">
+    <div class="secondaryCategoryGroup" *ngIf="Global.secondaryCategories.length > 0">
       <div>your secondary categories are:</div>
       <div *ngFor="let secondarySelectedCategory of secondarySelectedCategories" class="selectionDiv secondarySelectionDiv" >{{secondarySelectedCategory.name}}</div>
     </div>
@@ -21,7 +21,7 @@
     </div>
     <div class="selectionDiv" >
       <a routerLink="/secondaryCategories">
-        CLICK HERE!
+        ADD
       </a>
     </div>
 
@@ -31,8 +31,8 @@
 
     <div *ngIf="groups">
         <div class="grid grid-pad">
-            <a *ngFor="let group of groups" class="col-1-4"
-                routerLink="/detail/{{group.id}}">
+            <a *ngFor="let group of groups" class="col-1-4" (click)="setSelectedGroup(group)"
+                routerLink="/groupDetail">
               <div class="module">
                 <h4>{{group.name}}</h4>
               </div>

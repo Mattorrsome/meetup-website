@@ -9,8 +9,6 @@ import { Location } from '@angular/common';
 })
 export class CategoryGridComponent implements OnInit {
 
-  @Input() selectedCategory: any;
-
   constructor(private Global:Global,  private Location: Location) { }
 
   ngOnInit() {

@@ -15,7 +15,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import {MeetupService} from './services/meetup.service';
 
 import {Global} from './classes/global';
-
+import {Group} from './classes/group';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import {Global} from './classes/global';
     AppRoutingModule
     
   ],
-  providers: [MeetupService, Global],
+  providers: [MeetupService, Global, Group],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
 import {MeetupService} from '../services/meetup.service';
-import {Category} from '../classes/category';
 import {Global} from '../classes/global';
 
 @Component({

@@ -7,4 +7,5 @@ export class Global {
   secondaryCategories : number[] = [];
 
   categoryArray : any[] = [];
+
 }

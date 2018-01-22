@@ -1,3 +1,11 @@
-<p>
-  group-detail works!
-</p>
+<div>
+    <h2>{{selectedGroup.name}}</h2>
+</div>
+<div  [innerHTML]="selectedGroup.description"></div>
+<div><h4>City: {{selectedGroup.city}}</h4></div>
+<div><h4>Date Created: {{selectedGroup.dateCreated}}</h4></div>
+<div>
+    <button name="back" (click)="goBack()"> BACK</button>
+</div>
+
+
