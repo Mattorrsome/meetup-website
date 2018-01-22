@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+a {
+  text-decoration: none;
+}
 label {
     display: inline-block;
     width: 3em;
@@ -123,9 +125,11 @@ h1 {
     height: 120px;
     max-width: 200px;
     min-width: 120px;
-    background-color: #1e751d;
+    background-color: #206f1fd1;
     border-radius: 2px;
     display: table-caption;
+    
+    
   }
   .module:hover {
     background-color: #EEE;
@@ -152,8 +156,8 @@ h1 {
   }
 
 .selectionDiv a {
-
-    color: #888;
+  
+    color: rgba(36, 38, 163, 0.719);
     text-decoration: none;
     position: relative;
     display: block;
